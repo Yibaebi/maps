@@ -1,1 +1,8 @@
-console.log("Test to see if this application is working");
+import { User } from "./User";
+import { Company } from "./Company";
+
+const user = new User();
+const company = new Company();
+
+console.log("User", user);
+console.log("Comapny", company);
