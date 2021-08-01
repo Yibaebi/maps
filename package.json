@@ -1,5 +1,16 @@
 {
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "gh-pages": "^1.2.0",
+    "parcel-bundler": "^1.9.7",
     "@types/faker": "^5.5.7",
     "typescript": "^4.3.5"
   },
